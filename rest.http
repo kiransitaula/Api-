@@ -1,0 +1,32 @@
+## testing for server
+
+GET http://localhost:8000
+
+
+###get all the task
+GET  http://localhost:8000/api/v1/task
+
+
+###send task to api
+POST   http://localhost:8000/api/v1/task
+Content-Type: application/json
+
+{
+    "task": "watching TV",
+    "hr":33,
+    "type":"entry",
+    "_id": "ase3"
+}
+
+###upadte task to api
+PUT  http://localhost:8000/api/v1/task
+
+
+
+###delete task from api
+DELETE  http://localhost:8000/api/v1/task
+Content-Type: application/json
+
+{
+    "_id": "ase3"
+}
